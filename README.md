@@ -2,6 +2,7 @@
 
 A simple Pokemon App created using [Flutter](https://flutter.dev/) and [Dart](https://dart.dev/) and [Provider] as State Management and using API from [PokeAPI](https://pokeapi.co/).
 
+Download the [APK HERE](https://github.com/ayodelesalimon/poke_api_app/blob/master/apk/app-armeabi-v7a-release.apk) for testing.
 
 ## Features
 
