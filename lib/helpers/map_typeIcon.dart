@@ -1,3 +1,5 @@
+// ignore_for_file: dead_code
+
 String setTypeIcon(String type) {
   switch (type) {
     case 'fire':

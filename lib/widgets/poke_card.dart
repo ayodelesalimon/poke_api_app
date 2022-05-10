@@ -18,8 +18,8 @@ class PokeCard extends StatelessWidget {
       },
       child: Container(
         width: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.fromLTRB(20, 25, 20, 25),
-        margin: EdgeInsets.only(bottom: 20, top: 5, left: 5, right: 5),
+        padding: const EdgeInsets.fromLTRB(20, 25, 20, 25),
+        margin: const EdgeInsets.only(bottom: 20, top: 5, left: 5, right: 5),
         decoration: BoxDecoration(
           color: setCardColor(poke.type1.toString()),
           borderRadius: BorderRadius.circular(10),
@@ -27,7 +27,7 @@ class PokeCard extends StatelessWidget {
             BoxShadow(
               color: setCardColor(poke.type1.toString()).withOpacity(0.5),
               blurRadius: 5,
-              offset: Offset(2, 3),
+              offset: const Offset(2, 3),
             ),
           ],
         ),
@@ -39,17 +39,17 @@ class PokeCard extends StatelessWidget {
               children: [
                 Text(
                   '#' + poke.id.toString(),
-                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.w800),
+                  style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800),
                 ),
                 Text(
                   (poke.name),
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontWeight: FontWeight.w700,
                     fontSize: 25,
                     color: Colors.white,
                   ),
                 ),
-                SizedBox(height: 5),
+                const SizedBox(height: 5),
                
               ],
             ),

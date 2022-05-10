@@ -10,7 +10,7 @@ class SearchBar extends StatefulWidget {
 
 class _SearchBarState extends State<SearchBar> {
   final _textController = TextEditingController();
-  bool _validate = false;
+  final bool _validate = false;
 
   @override
   void dispose() {
@@ -27,7 +27,7 @@ class _SearchBarState extends State<SearchBar> {
         borderRadius: BorderRadius.circular(10),
       ),
       child: TextField(
-        style: TextStyle(color: Colors.black),
+        style: const TextStyle(color: Colors.black),
         maxLines: 1,
         controller: _textController,
         decoration: InputDecoration(
@@ -36,8 +36,8 @@ class _SearchBarState extends State<SearchBar> {
           border: InputBorder.none,
           focusedBorder: InputBorder.none,
           enabledBorder: InputBorder.none,
-          icon: Padding(
-            padding: const EdgeInsets.only(left: 15),
+          icon: const Padding(
+            padding: EdgeInsets.only(left: 15),
             child: Icon(
               Icons.search,
               color: Colors.black,
